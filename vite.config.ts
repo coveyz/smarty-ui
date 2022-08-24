@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
@@ -22,6 +23,16 @@ export default defineConfig({
     vueJsx({}),
     Unocss()
   ],
+  test: {
+    globals: true,
+    // simulate DOM with happy-dom
+    // (requires installing happy-dom as a peer dependency)
+    environment: 'happy-dom',
+    // 支持 tsx 组件
+    transformMode: {
+      web: [/.[tj]sx$/]
+    }
+  },
   build: {
     rollupOptions,
     minify: false,

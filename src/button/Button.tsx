@@ -49,7 +49,7 @@ export default defineComponent({
   name: "SButton",
   props,
   setup(props, {slots}) {
-    console.log('props=>',props)
+    // console.log('props=>',props)
     return () => <button 
       class={`
       py-${size[props.size].y}
