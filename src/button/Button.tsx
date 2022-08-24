@@ -1,30 +1,39 @@
-import { defineComponent,PropType,toRefs} from "vue";
+import { defineComponent, PropType } from "vue";
 import "uno.css";
 
-export type Icolor = 'black' | 'gray' | 'red' | 'yellow' | 'green'|'blue'|'indigo'|'purple'|'pink'
+export type Icolor =
+  | "black"
+  | "gray"
+  | "red"
+  | "yellow"
+  | "green"
+  | "blue"
+  | "indigo"
+  | "purple"
+  | "pink";
 export type ISize = "small" | "medium" | "large";
 export const props = {
   color: {
     type: String as PropType<Icolor>,
-    default: 'blue'
+    default: "blue",
   },
   size: {
     type: String as PropType<ISize>,
-    default: 'medium'
+    default: "medium",
   },
   icon: {
     type: String,
-    default: ''
+    default: "",
   },
   round: {
-   type: Boolean,
-   default: false 
+    type: Boolean,
+    default: false,
   },
   plain: {
     type: Boolean,
     default: false,
   },
-}
+};
 
 const size = {
   small: {
@@ -44,14 +53,14 @@ const size = {
   },
 };
 
-
 export default defineComponent({
   name: "SButton",
   props,
-  setup(props, {slots}) {
+  setup(props, { slots }) {
     // console.log('props=>',props)
-    return () => <button 
-      class={`
+    return () => (
+      <button
+        class={`
       py-${size[props.size].y}
       px-${size[props.size].x}
       ${props.round ? "rounded-full" : "rounded-lg"}
@@ -66,9 +75,14 @@ export default defineComponent({
       transition duration-300 ease-in-out transform hover:scale-105
       mx-1
       `}
-        > 
-        {props.icon !== '' ?<i class={`i-ic-baseline-${props.icon} p-3`}/> : ''}
-        {slots.default ? slots.default() : ''}
-     </button>
-  }
+      >
+        {props.icon !== "" ? (
+          <i class={`i-ic-baseline-${props.icon} p-3`} />
+        ) : (
+          ""
+        )}
+        {slots.default ? slots.default() : ""}
+      </button>
+    );
+  },
 });

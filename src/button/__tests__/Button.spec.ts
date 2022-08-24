@@ -1,68 +1,87 @@
-import { shallowMount } from '@vue/test-utils';
-import { describe, expect, test } from 'vitest'
+import { shallowMount } from "@vue/test-utils";
+import { describe, expect, test } from "vitest";
 
-import Button from '../Button';
+import Button from "../Button";
 
 // 测试分组
-describe('Button', () => {
+describe("Button", () => {
   // mount
-  test('mount @vue/test-utils', () => {
+  test("mount @vue/test-utils", () => {
     // @vue/test-utils
     const wrapper = shallowMount(Button, {
       slots: {
-        default: "Button"
-      }
-    })
+        default: "Button",
+      },
+    });
 
     // 断言
-    expect(wrapper.text()).toBe("Button")
-  })
+    expect(wrapper.text()).toBe("Button");
+  });
 
-  describe('color', () => {
-    test('default', () => {
+  describe("color", () => {
+    test("default", () => {
       const wrapper = shallowMount(Button, {
         slots: {
-          default: 'Button'
+          default: "Button",
         },
-      })
-      expect(wrapper.classes().map(item => item.replace('\n', '')).includes('bg-blue-500')).toBe(true)
-    })
+      });
+      expect(
+        wrapper
+          .classes()
+          .map((item) => item.replace("\n", ""))
+          .includes("bg-blue-500")
+      ).toBe(true);
+    });
 
-    test('red', () => {
+    test("red", () => {
       const wrapper = shallowMount(Button, {
         slots: {
-          default: 'Button'
+          default: "Button",
         },
         props: {
-          color: 'red'
-        }
-      })
-      expect(wrapper.classes().map(item => item.replace('\n', '')).includes('bg-red-500')).toBe(true)
-    })
-  })
-
-  describe('round', () => {
-    test('default', () => {
-      const wrapper = shallowMount(Button, {
-        slows: {
-          default: 'Button'
+          color: "red",
         },
-      })
-      expect(wrapper.classes().map(item => item.replace('\n', '')).includes("rounded-lg")).toBe(true)
-    })
-    test('round:true', () => {
+      });
+      expect(
+        wrapper
+          .classes()
+          .map((item) => item.replace("\n", ""))
+          .includes("bg-red-500")
+      ).toBe(true);
+    });
+  });
+
+  describe("round", () => {
+    test("default", () => {
       const wrapper = shallowMount(Button, {
         slows: {
-          default: 'Button'
+          default: "Button",
+        },
+      });
+      expect(
+        wrapper
+          .classes()
+          .map((item) => item.replace("\n", ""))
+          .includes("rounded-lg")
+      ).toBe(true);
+    });
+    test("round:true", () => {
+      const wrapper = shallowMount(Button, {
+        slows: {
+          default: "Button",
         },
         props: {
-          round: true
-        }
-      })
-      expect(wrapper.classes().map(item => item.replace('\n', '')).includes("rounded-full")).toBe(true)
-    })
-
-  })
+          round: true,
+        },
+      });
+      expect(
+        wrapper
+          .classes()
+          .map((item) => item.replace("\n", ""))
+          .includes("rounded-full")
+      ).toBe(true);
+    });
+  });
 
   describe("plain", () => {
     test("default", () => {
@@ -72,7 +91,12 @@ describe('Button', () => {
         },
       });
 
-      expect(wrapper.classes().map(v => v.replace('\n','')).includes("bg-blue-500")).toBe(true);
+      expect(
+        wrapper
+          .classes()
+          .map((v) => v.replace("\n", ""))
+          .includes("bg-blue-500")
+      ).toBe(true);
     });
 
     test("plain:true", () => {
@@ -85,23 +109,31 @@ describe('Button', () => {
         },
       });
 
-      expect(wrapper.classes().map(v => v.replace('\n','')).includes("bg-blue-100")).toBe(true);
+      expect(
+        wrapper
+          .classes()
+          .map((v) => v.replace("\n", ""))
+          .includes("bg-blue-100")
+      ).toBe(true);
     });
   });
 
-  test('icon', () => {
+  test("icon", () => {
     const wrapper = shallowMount(Button, {
       slots: {
-        default: "Button"
+        default: "Button",
       },
       props: {
-        icon: 'edit'
-      }
-    })
+        icon: "edit",
+      },
+    });
 
-    expect(wrapper.find('i').classes().map(item => item.replace('\n', '')).includes('i-ic-baseline-edit')).toBe(true)
-  })
-
-
-})
-
+    expect(
+      wrapper
+        .find("i")
+        .classes()
+        .map((item) => item.replace("\n", ""))
+        .includes("i-ic-baseline-edit")
+    ).toBe(true);
+  });
+});

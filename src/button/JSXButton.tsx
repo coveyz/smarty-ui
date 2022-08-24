@@ -1,8 +1,8 @@
-import {defineComponent} from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'JSXButton',
+  name: "JSXButton",
   render() {
-    return <button>JSXButton</button>
-  }
-})
+    return <button>JSXButton</button>;
+  },
+});

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button> SFC Button</button>
+    <button>SFC Button</button>
   </div>
 </template>
 
@@ -15,5 +15,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
