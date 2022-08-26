@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "smarty-test-ui": "workspace:^1.0.1",
+    "smarty-ui-block": "workspace:^1.0.0",
     "smarty-ui-vite": "0.0.0-0f05d2c",
     "vue": "3.2.37"
   }
