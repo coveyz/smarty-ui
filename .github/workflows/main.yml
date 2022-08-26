@@ -26,7 +26,7 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Run Lint
-        run: pnpm run lint
+        run: cd packages/smarty-ui && pnpm run lint
   # Test Task
   UnitTest:
     runs-on: ubuntu-latest
@@ -38,7 +38,7 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Run Test
-        run: pnpm run test:run
+        run: cd packages/smarty-ui && pnpm run test:run
   PreBild:
     runs-on: ubuntu-latest
     steps:
@@ -49,4 +49,4 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Run Build
-        run: pnpm run build
+        run: cd packages/smarty-ui && pnpm run build
