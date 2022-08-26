@@ -1,2 +1,11 @@
+**/node_modules/
+**/coverage/
+**/.pnpm-debug
+package-lock.json
 .DS_Store
-node_modules
+.spress
+.vercel
+dist
+.idea
+/test
+*.zip
