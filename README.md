@@ -14,7 +14,7 @@
     <a href="https://www.npmjs.com/package/smarty-ui-block"><img src="https://img.shields.io/npm/v/smarty-ui-block?color=c95f8b&amp;label=NPM" alt="NPM version"></a>
     <a href="https://github.com/coveyz/smarty-ui/actions/workflows/main.yml"><img src="https://github.com/coveyz/smarty-ui/actions/workflows/main.yml/badge.svg?branch=main" alt="CI" style="max-width: 100%;"></a>
       <img src="https://img.shields.io/github/license/coveyz/smarty-ui">
-
+    <img src='https://codecov.io/gh/coveyz/smarty-ui/branch/main/graph/badge.svg?token=RUWIZDNLL0' />
 </p>
 
 <br>
