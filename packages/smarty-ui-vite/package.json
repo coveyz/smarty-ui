@@ -1,11 +1,13 @@
 {
   "name": "smarty-ui-block",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "pnpm build:components",
+    "build:all": "vite build",
+    "build:components": "esno ./scripts/build.ts",
     "doc:dev": "vitepress dev docs",
     "doc:build": "vitepress build docs",
     "doc:serve": "vitepress serve docs",
@@ -19,6 +21,7 @@
   "license": "ISC",
   "devDependencies": {
     "@iconify-json/ic": "1.1.4",
+    "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.7.11",
     "@typescript-eslint/eslint-plugin": "^5.34.0",
     "@typescript-eslint/parser": "^5.35.1",
@@ -31,6 +34,8 @@
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-vue": "^9.4.0",
+    "esno": "^0.16.3",
+    "fs-extra": "^10.1.0",
     "happy-dom": "6.0.4",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",

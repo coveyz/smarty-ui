@@ -1,6 +1,7 @@
 import { defineComponent, PropType } from "vue";
 import "uno.css";
 
+
 export type Icolor =
   | "black"
   | "gray"

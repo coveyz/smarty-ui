@@ -6,6 +6,7 @@
 	},
 	"include": ["./src/**/*.*", "./src/shims-vue.d.ts"],
 	"exclude": ["node_modules"],
-	"esModuleInterpo": true,
-	"allowSyntheticDefaultImports": true
+	// "esModuleInterpo": true,
+	"esModuleInterpo": false,
+	"allowSyntheticDefaultImports": true // //允许从没有默认导出的模块引入
 }

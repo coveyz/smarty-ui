@@ -1,11 +1,12 @@
 /// <reference types="vitest" />
-import { defineConfig } from "vite";
+import { defineConfig, UserConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 // import { presetUno, presetAttributify, presetIcons } from 'unocss';
 // import Unocss from 'unocss/vite';
 // import Unocss from './config/unocss'
 import Unocss from "./config/unocss";
+// import { UserConfig } from 'vitest'
 
 const rollupOptions = {
   external: ["vue", "vue-router"],
@@ -16,7 +17,7 @@ const rollupOptions = {
   },
 };
 
-export default defineConfig({
+export const config = {
   plugins: [vue(), vueJsx({}), Unocss()],
   test: {
     globals: true,
@@ -34,6 +35,7 @@ export default defineConfig({
     sourcemap: true, // 输出 sourcemap
     brotliSize: true, // 生成压缩大小报告
     cssCodeSplit: true,
+    outDir: './dist',
     lib: {
       entry: "./src/entry.ts",
       name: "SmartyUi",
@@ -41,4 +43,7 @@ export default defineConfig({
       formats: ["es", "umd", "iife"],
     },
   },
-});
+
+}
+
+export default defineConfig(config as UserConfig);
