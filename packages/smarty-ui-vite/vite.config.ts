@@ -30,16 +30,16 @@ export const config = {
     },
     coverage: {
       provider: "istanbul",
-      reporter: ['text', 'json', 'html']
-    }
+      reporter: ["text", "json", "html"],
+    },
   },
   build: {
     rollupOptions,
     minify: "terser", // boolean | terser | esbuild
     sourcemap: true, // 输出 sourcemap
     brotliSize: true, // 生成压缩大小报告
-    cssCodeSplit: true,
-    outDir: './dist',
+    // cssCodeSplit: true,
+    outDir: "./dist",
     lib: {
       entry: "./src/entry.ts",
       name: "SmartyUi",
@@ -47,7 +47,6 @@ export const config = {
       formats: ["es", "umd", "iife"],
     },
   },
-
-}
+};
 
 export default defineConfig(config as UserConfig);
