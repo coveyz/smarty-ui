@@ -1,6 +1,6 @@
 {
   "name": "smarty-ui-block",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "module": "./dist/smarty-ui",
