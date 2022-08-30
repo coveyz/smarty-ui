@@ -1,9 +1,9 @@
 {
   "name": "smarty-ui-block",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
-  "module": "./dist/smarty-ui",
+  "module": "./dist/smarty-ui.mjs",
   "homepage": "https://smarty-ui-coveyz.vercel.app/",
   "scripts": {
     "dev": "vite",
