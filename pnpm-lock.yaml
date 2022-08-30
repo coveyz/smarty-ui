@@ -88,9 +88,6 @@ importers:
       vitepress-theme-demoblock: 1.4.2
       vitest: 0.21.1_djyruduzn2kvk6r7b6ckxc7fjq
 
-  packages/smarty-ui-vite/dist/button:
-    specifiers: {}
-
 packages:
 
   /@algolia/autocomplete-core/1.7.1:
