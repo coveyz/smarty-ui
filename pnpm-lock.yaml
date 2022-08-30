@@ -60,6 +60,77 @@ importers:
       vitepress-theme-demoblock: 1.4.2
       vitest: 0.21.1
       vue: 3.2.37
+    dependencies:
+      c8: 7.12.0
+      jest: 28.1.3_@types+node@18.7.13
+      vue: 3.2.37
+    devDependencies:
+      '@iconify-json/ic': 1.1.4
+      '@types/fs-extra': 9.0.13
+      '@types/node': 18.7.13
+      '@typescript-eslint/eslint-plugin': 5.35.1_t3qvqq7ugt4jqnoquow4ze3psy
+      '@typescript-eslint/parser': 5.35.1_sorwav4hsh5vncerguqybud76i
+      '@unocss/preset-attributify': 0.45.13
+      '@unocss/preset-icons': 0.45.13
+      '@unocss/preset-uno': 0.45.13
+      '@vitejs/plugin-vue': 3.0.3_vite@3.0.7+vue@3.2.37
+      '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.7+vue@3.2.37
+      '@vitest/ui': 0.22.1
+      '@vue/eslint-config-prettier': 7.0.0_bxpuzolsxufkw2ipnoyzzxnyrm
+      '@vue/test-utils': 2.0.2_vue@3.2.37
+      babel-eslint: 10.1.0_eslint@8.23.0
+      eslint: 8.23.0
+      eslint-formatter-pretty: 4.1.0
+      eslint-plugin-json: 3.1.0
+      eslint-plugin-vue: 9.4.0_eslint@8.23.0
+      esno: 0.16.3
+      fs-extra: 10.1.0
+      happy-dom: 6.0.4
+      husky: 8.0.1
+      prettier: 2.7.1
+      terser: 5.4.0
+      typescript: 4.7.4
+      unocss: 0.33.4_vite@3.0.7
+      vite: 3.0.7_terser@5.4.0
+      vitepress: 0.22.4
+      vitepress-theme-demoblock: 1.4.2
+      vitest: 0.21.1_mdma6pe6o65d3mkvtsnydk7z7e
+
+  packages/smarty-ui-vite/dist:
+    specifiers:
+      '@iconify-json/ic': 1.1.4
+      '@types/fs-extra': ^9.0.13
+      '@types/node': ^18.7.11
+      '@typescript-eslint/eslint-plugin': ^5.34.0
+      '@typescript-eslint/parser': ^5.35.1
+      '@unocss/preset-attributify': ^0.45.13
+      '@unocss/preset-icons': ^0.45.13
+      '@unocss/preset-uno': ^0.45.13
+      '@vitejs/plugin-vue': 3.0.3
+      '@vitejs/plugin-vue-jsx': 2.0.0
+      '@vitest/ui': ^0.22.1
+      '@vue/eslint-config-prettier': ^7.0.0
+      '@vue/test-utils': 2.0.2
+      babel-eslint: ^10.1.0
+      c8: ^7.12.0
+      eslint: ^8.22.0
+      eslint-formatter-pretty: ^4.1.0
+      eslint-plugin-json: ^3.1.0
+      eslint-plugin-vue: ^9.4.0
+      esno: ^0.16.3
+      fs-extra: ^10.1.0
+      happy-dom: 6.0.4
+      husky: ^8.0.1
+      jest: ^28.1.3
+      prettier: ^2.7.1
+      terser: 5.4.0
+      typescript: ^4.7.4
+      unocss: 0.33.4
+      vite: 3.0.7
+      vitepress: ^0.22.4
+      vitepress-theme-demoblock: 1.4.2
+      vitest: 0.21.1
+      vue: 3.2.37
       vue@6.5.1: link:testing-library/vue@6.5.1
     dependencies:
       c8: 7.12.0
@@ -97,6 +168,9 @@ importers:
       vitepress-theme-demoblock: 1.4.2
       vitest: 0.21.1_mdma6pe6o65d3mkvtsnydk7z7e
       vue@6.5.1: link:testing-library/vue@6.5.1
+
+  packages/smarty-ui-vite/dist/button:
+    specifiers: {}
 
 packages:
 
