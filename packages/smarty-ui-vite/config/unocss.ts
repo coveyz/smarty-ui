@@ -47,7 +47,7 @@ export default () =>
     safelist,
     presets: [
       presetAttributify(),
-      presetIcons(), // 预设图标添加
+      presetIcons(), // 添加图标预设
       presetUno(),
     ],
   });
