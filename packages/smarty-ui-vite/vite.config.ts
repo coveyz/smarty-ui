@@ -44,7 +44,7 @@ export const config = {
       entry: "./src/entry.ts",
       name: "SmartyUi",
       fileName: "smarty-ui",
-      formats: ["es", "umd", "iife"],
+      formats: ["esm", "umd", "iife"],
     },
   },
 };
