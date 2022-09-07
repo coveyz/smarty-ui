@@ -11,6 +11,7 @@ import Unocss from "./config/unocss";
 const rollupOptions = {
   external: ["vue", "vue-router"],
   output: {
+    // assetFileNames: "[name].[ext]",
     globals: {
       vue: "Vue",
     },
