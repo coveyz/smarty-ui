@@ -1,6 +1,6 @@
 {
-  "name": "create-smarty-cli",
-  "version": "1.0.1",
+  "name": "create-smarty-ui-block-cli",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "type": "module",
