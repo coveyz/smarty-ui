@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "download-git-repo": "3.0.2",
+    "ora": "6.1.2",
     "smarty-ui-block": "workspace:^1.0.0",
     "smarty-ui-vite": "0.0.0-0f05d2c",
     "vue": "3.2.37"
